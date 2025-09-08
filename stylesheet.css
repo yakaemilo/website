@@ -1,0 +1,161 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html, body{
+	height: 100%;
+}
+
+/*
+  .bg{
+  width: 100vw;
+  height: 100vh;
+  background-color: yellow;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  display: none;
+}
+*/
+
+/* color scheme */ 
+:root {
+	--c0: #0B0807;
+	--c1: #98b9dc;
+	--c2: #a8cee2;
+	--c3: #b7d5e7;
+	--c4: #bbcae8;
+	--c5: #efd1d7;
+	--c6: #c9daed;
+	--c7: #e3eaf0;
+	--c8: #9ea3a8;
+	--c9: #98b9dc;
+
+	--fg: var(--c0);
+	--bg: var(--c7);
+}
+
+::selection {
+	background-color: var(--c9);
+}
+
+/* rules for darkmode */
+#dark:target ~ .container {
+	--fg:       var(--c7);
+	--bg:       var(--c0);
+	background: var(--bg);
+}
+
+#dark:target ~ .container .darkbtn {
+	z-index: -1;
+}
+
+/* rules for darkmode end*/
+
+.container {
+	height:     100%;
+	background: var(--c9);
+	color:      var(--fg);
+}
+
+header {
+	background: var(--bg);
+}
+
+h2 {
+	text-align: center;
+}
+
+.bg {
+	background-color: var(--bg);
+}
+
+.fg {
+	background-color: var(--fg);
+}
+
+.align {
+	margin-left:  20%;
+	margin-right: 20%;
+}
+
+.row {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.text5 {
+	color: var(--c5);
+}
+
+.links {
+	flex: 1;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.div1 {
+}
+
+.hiddeWebsite Logon {
+	display: none;
+}
+
+.big_text {
+	text-align: center;
+	padding-bottom: 2em;
+	padding-top: 2em;
+}
+
+.row {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.link {
+	color: var(--c2)
+}
+
+/* rules for contact.html */
+.contact {
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.field {
+	padding: 1em;
+}
+
+/* rules for contact.html end */
+
+/* stupit button */
+.btn {
+	display: grid;
+	align: right;
+}
+
+.btn > * {
+	grid-row: 1;
+	grid-column: 1;
+	color: var(--fg);
+	background-color: var(--bg);
+	text-decoration: none;
+}
+
+.darkbtn {
+	z-index:  1;
+}
+/* stupit button end */
+
+
+
+	
+
+
+.round-corner {
+	border-radius: 50px;
+	border-color:  #012;
+	border:        0;
+	padding:       10px;
+}
