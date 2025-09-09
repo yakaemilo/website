@@ -44,7 +44,14 @@ html, body{
 #dark:target ~ .container {
 	--fg:       var(--c7);
 	--bg:       var(--c0);
-	background: var(--bg);
+	background: url("./wired.png");
+	background-size: cover;
+	background-position-y: bottom 40%;
+	background-position-x: center;
+	background-repeat: no-repeat;
+}
+
+#dark:target ~ .container .div1 {
 }
 
 #dark:target ~ .container .darkbtn {
@@ -55,8 +62,7 @@ html, body{
 
 .container {
 	height:     100%;
-	background: var(--c9);
-	color:      var(--fg);
+	background-color: white;
 }
 
 header {
