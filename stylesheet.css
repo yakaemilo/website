@@ -27,7 +27,7 @@ html, body{
 	--c2: #a8cee2;
 	--c3: #b7d5e7;
 	--c4: #bbcae8;
-	--c5: #efd1d7;
+	--c5: #212121;
 	--c6: #c9daed;
 	--c7: #e3eaf0;
 	--c8: #9ea3a8;
@@ -46,13 +46,14 @@ html, body{
 #dark:target ~ .container {
 	--fg:       var(--c7);
 	--bg:       var(--c0);
-	background: url("./wired.png");
+	background: var(--c5);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position-y: bottom 40%;
 }
 
 #dark:target ~ .container .div1 {
+	background-color: var(--c5)
 }
 
 #dark:target ~ .container .darkbtn {
@@ -104,6 +105,7 @@ h2 {
 
 .div1 {
 	margin-bottom: 0;
+	color: var(--fg);
 }
 
 .big_text {
@@ -126,6 +128,7 @@ h2 {
 .contact {
 	display: flex;
 	flex-flow: column wrap;
+	color: var(--fg)
 }
 
 .contact_row {
@@ -138,31 +141,33 @@ h2 {
 	height: 734%;
 }
 
-/* rules for contact.html end */
-
-/* stupit button */
+/* button */
 .btn {
 	font-size: 1.3rem;
 	display: grid;
-	align: right;
+	box-align: right;
 	padding: 1em;
-}
-
-.btn:hover > * {
 }
 
 .btn > * {
 	background-color: var(--bg);
 	border-radius: 50%;
 	border: .1em solid var(--fg);
-	padding: 0.17em;
-	padding-top:       0.02em;
-	padding-bottom:       0em;
+	padding: 0.25em;
+	padding-top: 0;
+	padding-bottom: 0;
 
 	grid-row: 1;
 	grid-column: 1;
 	color: var(--fg);
 	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.btn:hover > * {
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+	background-color: var(--fg);
+	color: var(--bg);
 }
 
 .darkbtn {
