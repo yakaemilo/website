@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="with=device-width, initial-scale=1.0">
+		<title>
+			##NAME
+		</title>
+		<link rel="stylesheet" href="./stylesheet.css">
+	</head>
+	<body>
+		<p id="dark" class="hidden"></p>
+		<div class="container">
+			<!--header-->
+			<header>
+				<div class="align row">
+					<nav class="links">
+						<p><a href="./index.html" class="link">Home</a></p>
+						<p><a href="./projects.html" class="link">Projekte</a></p>
+						<p><a href="./contact.html" class="link">Kontakt</a></p>
+						<p><a href="./https://github.com/username" class="link">Github</a></p>
+					</nav>
+					<div>
+						<label for="darkmode_toggle" class="btn field">
+							<a class="darkbtn" href="#dark">☾</a>
+							<a class="lightbtn" href="#">☀︎</a>
+						</label>
+					</div>
+				</div>
+			</header>
+			<div class="align div1">
+				<h1 class=big_text>
+					Hallo! ich bin ##NAME, ein anstrebender Fachinformatiker, und linux und technik entusiast :D
+				</h1>
+				<h2>
+					hier koennen sie mehr ueber mich erfahren, einen <a class="link" href="./projects.html">ueberblick ueber meine projekte</a> bekomen und <a class="link" href="./contact.html">mich kontaktiren</a>.
+				</h2>
+				<!--about me-->
+			</div>
+			<div class=align>
+				<!--test-->
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<p style="color: var(--fg);">--fg: #fcfcfc;</p>
+				<p style="color: var(--c0);">--c0: #0B0807;</p>
+				<p style="color: var(--c1);">--c1: #98b9dc;</p>
+				<p style="color: var(--c2);">--c2: #a8cee2;</p>
+				<p style="color: var(--c3);">--c3: #b7d5e7;</p>
+				<p style="color: var(--c4);">--c4: #bbcae8;</p>
+				<p style="color: var(--c5);">--c5: #efd1d7;</p>
+				<p style="color: var(--c6);">--c6: #c9daed;</p>
+				<p style="color: var(--c7);">--c7: #e3eaf0;</p>
+				<p style="color: var(--c8);">--c8: #9ea3a8;</p>
+				<p style="color: var(--c9);">--c9: #98b9dc;</p>
+				<p style="color: var(--bg);">--bg: #0B0807;</p>
+			</div>
+		</div>
+	</body>
+</html>

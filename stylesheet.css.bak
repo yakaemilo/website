@@ -32,7 +32,6 @@ html, body{
 	--c7: #e3eaf0;
 	--c8: #9ea3a8;
 	--c9: #98b9dc;
-	--c10: #fafcfc;
 
 	--fg: var(--c0);
 	--bg: var(--c7);
@@ -112,6 +111,11 @@ h2 {
 	padding-top: 2em;
 }
 
+.row {
+	display: flex;
+	flex-flow: row wrap;
+}
+
 .link:hover {
 	text-decoration: underline;
 	color: var(--c2)
@@ -119,23 +123,24 @@ h2 {
 
 .link {
 	text-decoration: none;
-	color: var(--c9)
+	color: var(--c2)
 }
 
 /* rules for contact.html */
 .contact {
 	display: flex;
-	flex-flow: column wrap;
-}
-
-.contact_row {
-	display: flex;
 	flex-flow: row wrap;
 }
 
-.contact_row > * {
-	width: 15%;
-	height: 734%;
+.contact > * {
+	padding 20%
+}
+
+.contact_type {
+	padding-right: 20%;
+}
+.contact_info {
+	padding-right: 50%;
 }
 
 /* rules for contact.html end */
@@ -145,7 +150,6 @@ h2 {
 	font-size: 1.3rem;
 	display: grid;
 	align: right;
-	padding: 1em;
 }
 
 .btn:hover > * {
@@ -168,27 +172,12 @@ h2 {
 .darkbtn {
 	z-index:  1;
 }
-
-/* project */
-.projects {
-	padding-top: 10%;
-	text-align: center;
-}
-
-.project_article {
-	border: .1rem solid var(--fg);
-	background-color: var(--c10)
-}
+/* stupit button end */
 
 
-.project_title {
-	padding: 5%;
-}
+
 	
-.project_description {
-	padding: 2%;
-	text-align: justify;
-}
+
 
 .round-corner {
 	border-radius: 50px;

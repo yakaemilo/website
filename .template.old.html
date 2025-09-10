@@ -5,7 +5,6 @@
 
 html, body{
 	height: 100%;
-	font-family: sans-serif;
 }
 
 /*
@@ -32,7 +31,6 @@ html, body{
 	--c7: #e3eaf0;
 	--c8: #9ea3a8;
 	--c9: #98b9dc;
-	--c10: #fafcfc;
 
 	--fg: var(--c0);
 	--bg: var(--c7);
@@ -48,8 +46,9 @@ html, body{
 	--bg:       var(--c0);
 	background: url("./wired.png");
 	background-size: cover;
-	background-repeat: no-repeat;
 	background-position-y: bottom 40%;
+	background-position-x: center;
+	background-repeat: no-repeat;
 }
 
 #dark:target ~ .container .div1 {
@@ -103,7 +102,10 @@ h2 {
 }
 
 .div1 {
-	margin-bottom: 0;
+}
+
+.hiddeWebsite Logon {
+	display: none;
 }
 
 .big_text {
@@ -112,14 +114,13 @@ h2 {
 	padding-top: 2em;
 }
 
-.link:hover {
-	text-decoration: underline;
-	color: var(--c2)
+.row {
+	display: flex;
+	flex-flow: row wrap;
 }
 
 .link {
-	text-decoration: none;
-	color: var(--c9)
+	color: var(--c2)
 }
 
 /* rules for contact.html */
@@ -128,67 +129,35 @@ h2 {
 	flex-flow: column wrap;
 }
 
-.contact_row {
-	display: flex;
-	flex-flow: row wrap;
-}
-
-.contact_row > * {
-	width: 15%;
-	height: 734%;
+.field {
+	padding: 1em;
 }
 
 /* rules for contact.html end */
 
 /* stupit button */
 .btn {
-	font-size: 1.3rem;
 	display: grid;
 	align: right;
-	padding: 1em;
-}
-
-.btn:hover > * {
 }
 
 .btn > * {
-	background-color: var(--bg);
-	border-radius: 50%;
-	border: .1em solid var(--fg);
-	padding: 0.17em;
-	padding-top:       0.02em;
-	padding-bottom:       0em;
-
 	grid-row: 1;
 	grid-column: 1;
 	color: var(--fg);
+	background-color: var(--bg);
 	text-decoration: none;
 }
 
 .darkbtn {
 	z-index:  1;
 }
-
-/* project */
-.projects {
-	padding-top: 10%;
-	text-align: center;
-}
-
-.project_article {
-	border: .1rem solid var(--fg);
-	background-color: var(--c10)
-}
+/* stupit button end */
 
 
-.project_title {
-	padding: 5%;
-}
+
 	
-.project_description {
-	padding: 2%;
-	text-align: justify;
-}
+
 
 .round-corner {
 	border-radius: 50px;
