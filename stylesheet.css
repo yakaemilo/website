@@ -46,7 +46,7 @@ html, body{
 #dark:target ~ .container {
 	--fg:       var(--c7);
 	--bg:       var(--c0);
-	background: var(--c5);
+	background-color: var(--c5);
 }
 
 #dark:target ~ .container .div1 {
@@ -60,7 +60,7 @@ html, body{
 /* rules for darkmode end*/
 
 .container {
-	height:     100%;
+	height: 100%;
 	background-color: white;
 }
 
@@ -82,17 +82,13 @@ h2 {
 }
 
 .align {
-	margin-left:  20%;
+	margin-left: 20%;
 	margin-right: 20%;
 }
 
 .row {
 	display: flex;
 	flex-flow: row wrap;
-}
-
-.text5 {
-	color: var(--c5);
 }
 
 .links {
@@ -175,7 +171,8 @@ h2 {
 
 /* project */
 .projects {
-	padding-top: 10%;
+	padding-top: 5%;
+	padding-bottom: 5%;
 	text-align: center;
 }
 
@@ -194,9 +191,3 @@ h2 {
 	text-align: justify;
 }
 
-.round-corner {
-	border-radius: 50px;
-	border-color:  #012;
-	border:        0;
-	padding:       10px;
-}
