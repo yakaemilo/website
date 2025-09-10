@@ -11,7 +11,7 @@ read -r age
 
 sed -i "s/##LOCATION/$location/g" *
 sed -i "s/##NAME/$name/g" *
-sed -i "s/##AGE/$age/g" *
+sed -i "s/##AGE/$age Jahre/g" *
 
 
 
