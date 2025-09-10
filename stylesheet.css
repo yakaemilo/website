@@ -47,9 +47,6 @@ html, body{
 	--fg:       var(--c7);
 	--bg:       var(--c0);
 	background: var(--c5);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position-y: bottom 40%;
 }
 
 #dark:target ~ .container .div1 {
@@ -73,6 +70,7 @@ header {
 
 h2 {
 	text-align: center;
+	color: var(--fg);
 }
 
 .bg {
@@ -112,6 +110,7 @@ h2 {
 	text-align: center;
 	padding-bottom: 2em;
 	padding-top: 2em;
+	color: var(--fg);
 }
 
 .link:hover {
